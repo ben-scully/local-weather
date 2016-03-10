@@ -6,15 +6,23 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <header>Wellington Weather</header>
-  <div id="container">
-    <div id="loc">Location</div>
-    <div id="temp">Temp</div>
-    <div id="weather">Weather</div>
-    <div id="sybol">Symbol</div>
+
+  <div class="container">
+    <div class="box">
+      <header>
+        Wellington Weather
+      </header>
+
+      <div class="kids" id="loc"><h2>Location</h2></div>
+      <div class="kids" id="temp">Temp</div>
+      <button type="button" class="kids" id="change" onclick="changeTemp()"></Button>
+      <div class="kids" id="weather">Weather</div>
+      <div class="kids" id="symbol">Symbol</div>
+    </div>
   </div>
 
   <script src="js/script.js"></script>
