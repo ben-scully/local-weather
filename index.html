@@ -2,30 +2,30 @@
 <html>
 
 <head>
-  <title>Wellington Weather</title>
+  <title>Wikipedia Viewer</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> -->
 </head>
 
 <body>
 
-  <div class="container">
-    <div class="box">
-      <header>
-        Wellington Weather
-      </header>
-
-      <div class="kids" id="loc"><h2>Location</h2></div>
-      <div class="kids" id="temp">Temp</div>
-      <button type="button" class="kids" id="change" onclick="changeTemp()"></Button>
-      <div class="kids" id="weather">Weather</div>
-      <div class="kids" id="symbol">Symbol</div>
-    </div>
+  <div id="randomSearch">
+    <a href="http://en.wikipedia.org/wiki/Special:Random" target="_blank">Find a Random Wiki Article</a>
   </div>
 
-  <script src="js/script.js"></script>
+  <div id="customSearch">
+    <form action="k">
+      Search Wikipedia:
+      <br>
+      <input type="text" name="firstname">
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <!-- <script src="js/script.js"></script> -->
 </body>
 
 </html>
